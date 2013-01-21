@@ -21,6 +21,7 @@ The source XML files are in a format that only Glasgow Council will have as
 TrackYou wrote a system specifically for the council to generate these files.
 You can see an anonymised version of the kind of source data processed by this
 system inside the sampledata directory.
+N.B. The code is tightly bound to the structure of the TrackYou data.
 
 Produced by IRISS, http://www.iriss.org.uk
 for
