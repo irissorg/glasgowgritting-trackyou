@@ -12,14 +12,14 @@ XML data uploaded by TrackYou every 15 minutes. We also run
 scripts/gccgrittingrecentactivity-light.sh to generate the RSS feed for 
 website subscription purposes.
 
-You will need to create 4 directories to hold files at various stages of 
+You will need to create 5 directories to hold files at various stages of 
 processing
 
 1. trackyou-uploads
 2. trackyou-uncompressed
 3. trackyou-opendata
 4. trackyou-archive
-
+5. php/registrations
 
 * Change to the php directory
 * Copy config.sample.inc to config.inc
