@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="gccgrittingtext" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutTTCC" />
+        <param name="file" value="logs/gcc-gritting-%s.log" />
+        <param name="datePattern" value="Y-m-d" />
+        <param name="append" value="true" />
+    </appender>
+
+	<appender name="gccgrittinghtml" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutHtml">
+        	 <param name="locationInfo" value="true" />
+        	 <param name="title" value="Gritting Report" />
+		</layout>
+       	 
+        <param name="file" value="logs/gcc-gritting-%s.html" />
+        <param name="datePattern" value="Y-m-d" />
+        <param name="append" value="true" />
+    </appender>
+ 
+ 	<!-- Send email to administrator for any WARN/ERROR/FATAL conditions -->
+	<appender name="grittingmail" class="LoggerAppenderMail" threshold="WARN">
+		<layout class="LoggerLayoutTTCC" />
+		<param name="to" value="yourto@example.com" />
+		<param name="from" value="yourfrom@example.com" />
+		<param name="subject" value="Gritting Report" />
+ 	</appender>       
+
+    <root>
+    	<level value="warn" />
+        <appender_ref ref="gccgrittingtext" />
+		<appender_ref ref="gccgrittinghtml" />
+		<appender_ref ref="grittingmail" />
+   </root>
+
+</configuration>
