@@ -1,0 +1,3 @@
+/usr/bin/xsltproc -o /home/gccgritting/public_html/sites/default/files/opendata/feeds/rss/gccgrittingrecentactivity-light.xml --param urlfeed "'http://gccgritting.iriss.org.uk/opendata/feeds/rss/gccgrittingrecentactivity-light.xml'" /home/gccgritting/private/gccgritting/xsl/gccgrittingrecentactivity-light.xsl /home/gccgritting/public_html/sites/default/files/opendata/feeds/rss/gccgrittingrecentactivity.xml
+
+gzip --stdout /home/gccgritting/public_html/sites/default/files/opendata/feeds/rss/gccgrittingrecentactivity-light.xml > /home/gccgritting/public_html/sites/default/files/opendata/feeds/rss/gccgrittingrecentactivity-light.xml.gz
