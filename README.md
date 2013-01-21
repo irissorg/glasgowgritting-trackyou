@@ -23,4 +23,4 @@ for
 Glasgow City Council, http://www.glasgow.gov.uk
 
 This project was supported by Nesta - Make it Local Scotland 
-http://www.nesta.org.uk/areas_of_work/public_services_lab/make_it_local_scotland
+http://www.nesta.org.uk/areas_of_work/public_services_lab/past_projects_public_services_lab/make_it_local_scotland/assets/features/make_it_local_scotland
